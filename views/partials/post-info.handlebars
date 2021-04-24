@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body tcolor1 color2">
+    <div class="card-title">
+      <h4><span>{{title}}</span></h4>
+    </div>
+    <div>
+      <p><span>{{content}}</span></p>
+    </div>
+  
+    by {{user.username}} on
+    {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
+
+</div>

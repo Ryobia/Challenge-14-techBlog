@@ -1,25 +1,35 @@
-{{!-- <div class="d-flex flex-column">
-  <label for="email-login">email:</label>
-  <div class="col">
-    <input type="text" id="email-login" />
-  </div>
-  <label for="password-login">password:</label>
-  <div class="col">
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</div> --}}
+<form class="card m-5 login-form">
+  <h4 class="color2 tcolor1 p-2 m-0">Login</h4>
 
-<div class="card m-4">
-  <div class="card-body color2 tcolor1">
-    <h5>Email</h5>
-    <input type="text">
+  <div class="card-body tcolor2 color1 login p-2">
+
+    <h5 class="">Email</h5>
+    <input class="w-100" type="text" id="email-login"/>
     <h5>Password</h5>
-    <input type="text">
-    <button class="color1 tcolor2 font-weight-bold">Login</button>
-  <a href="/signup">Or signup here!</a>
+    <input class="w-100 mb-2" type="password" id="password-login"/>
+    <button class="bg-secondary tcolor2 font-weight-bold w-100 mybtn" type="submit">Login</button>
 
   </div>
+</form>
+
+<div class="p-5 d-flex justify-content-center">
+  <h3>Don't Have an Account? Signup Down Below!</h3>
 </div>
+
+
+<form class="card m-5 signup-form">
+  <h4 class="color2 tcolor1 p-2 m-0">Signup</h4>
+
+  <div class="card-body tcolor2 color1 login p-2">
+
+    <h5>Username</h5>
+    <input class="w-100" type="text" name="" id="username-signup"/>
+    <h5>Email</h5>
+    <input class="w-100" type="text" id="email-signup"/>
+    <h5>Password</h5>
+    <input class="w-100 mb-2" type="password" id="password-signup"/>
+    <button class="bg-secondary tcolor2 font-weight-bold w-100 mybtn" type="submit">Signup</button>
+
+  </div>
+</form>
+<script src="/javascript/login.js"></script>
