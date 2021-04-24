@@ -1,0 +1,17 @@
+<div class="card m-4 post">
+    <div class="card-body color1 tcolor2 post">
+        {{#each comments}}
+        <div class="card-title">
+            <h5><span>{{comment_text}}</span></h5>
+        </div>
+        <div>
+            <p><span>{{content}}</span></p>
+        </div>
+        <p class="inner-post">
+        by {{user.username}} on
+        {{format_date created_at}}
+        </p>
+        {{/each}}
+    </div>
+
+</div>
