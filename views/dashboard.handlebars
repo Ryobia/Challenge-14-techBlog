@@ -1,30 +1,30 @@
-<section>
-  <h2>Create New Post</h2>
+<form class="card m-5 new-post-form">
+  <h4 class="color2 tcolor1 p-2 m-0">Create a New Post</h4>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-url">Body</label>
-      <input id="post-url" name="post-url" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+  <div class="card-body tcolor2 color1 login p-2">
+
+    <h5 class="">Post Title</h5>
+    <input class="w-100" type="text" id="post-title" name="post-title" />
+    <h5>Post Content</h5>
+    <input class="w-100 mb-2" type="text" id="post-content" name="post-content" />
+    <button class="bg-secondary tcolor2 font-weight-bold w-100 mybtn" type="submit">Create Post</button>
+
+  </div>
+</form>
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ul>
+  <div class="m-5 color2 tcolor1 p-2">
+    <h4>Your Posts:</h4>
+  </div>
+  
     {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+    {{> post-info post}}
+    <div class="ml-5">
+      <a href="/dashboard/edit/{{post.id}}" class="">Edit post</a>
+    </div>
     {{/each}}
-  </ul>
+  
 </section>
 {{/if}}
 <script src="/javascript/add-post.js"></script>

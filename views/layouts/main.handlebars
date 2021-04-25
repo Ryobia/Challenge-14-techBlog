@@ -34,9 +34,10 @@
 
     </main>
     {{#if loggedIn}}
-    <footer class="d-flex justify-content-center fixed-bottom mb-2">
-        <a href="/dashboard" class="color2 tcolor1 p-3 mybtn">New Post</a>
-    </footer>
+    <footer class="d-flex justify-content-center m-2">
+<form action="/dashboard">
+    <input class="color2 tcolor1 p-3 mybtn" type="submit" value="New Post"/>
+</form>    </footer>
     <script src="/javascript/logout.js"></script>
     {{/if}}
 </body>
