@@ -24,7 +24,8 @@ async function signupFormHandler(event) {
           password,
         }),
         headers: { "Content-Type": "application/json" },
-      }).then(document.location.replace("/dashboard"));
+      }).then(document.location.replace("/dashboard"))
+      .catch();
       
     } else {
       alert(response.statusText);
